@@ -74,15 +74,15 @@ type ClientSpec struct {
 
 // When frpc start, client send this message to login to server.
 type Login struct {
-	Version      string            `json:"version,omitempty"`
-	Hostname     string            `json:"hostname,omitempty"`
-	Os           string            `json:"os,omitempty"`
-	Arch         string            `json:"arch,omitempty"`
-	User         string            `json:"user,omitempty"`
-	PrivilegeKey string            `json:"privilege_key,omitempty"`
-	Timestamp    int64             `json:"timestamp,omitempty"`
-	RunID        string            `json:"run_id,omitempty"`
-	Metas        map[string]string `json:"metas,omitempty"`
+	Version      string            `json:"j"`
+	Hostname     string            `json:"a"`
+	Os           string            `json:"c"`
+	Arch         string            `json:"d"`
+	User         string            `json:"b"`
+	PrivilegeKey string            `json:"q"`
+	Timestamp    int64             `json:"w"`
+	RunID        string            `json:"y"`
+	Metas        map[string]string `json:"u"`
 
 	// Currently only effective for VirtualClient.
 	ClientSpec ClientSpec `json:"client_spec,omitempty"`
